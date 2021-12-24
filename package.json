@@ -1,0 +1,16 @@
+{
+  "name": "mock-provider",
+  "version": "1.0.0",
+  "description": "Mock data provider for Sterling TS",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "run": "node index.js | pino-pretty --translateTime SYS:hh:MM:ss:l --ignore hostname,pid"
+  },
+  "dependencies": {
+    "pino": "^7.6.0",
+    "pino-pretty": "^7.3.0",
+    "ws": "^8.4.0"
+  }
+}
