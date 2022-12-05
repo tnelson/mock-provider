@@ -1,9 +1,11 @@
 import { WebSocketServer } from 'ws';
 import pino from 'pino';
-import fs from 'fs';
+import mockIndex, {validateMockIndex} from './mocks.js';
 
 const logger = pino();
 const server = new WebSocketServer({ port: 4000 });
+
+validateMockIndex();
 
 function parseMessage (ws, message) {
   if (message === 'ping') {
@@ -28,23 +30,7 @@ function handleDataRequest (ws) {
     type: 'data',
     version: 1,
     payload: {
-      enter: [
-        {
-          id: '0',
-          format: 'alloy',
-          data: fs.readFileSync('./data/trace0.xml', 'utf-8')
-        },
-        {
-          id: '1',
-          format: 'alloy',
-          data: fs.readFileSync('./data/trace1.xml', 'utf-8')
-        },
-        {
-          id: '2',
-          format: 'alloy',
-          data: fs.readFileSync('./data/trace2.xml', 'utf-8')
-        }
-      ]
+      enter: mockIndex
     }
   };
   ws.send(JSON.stringify(response));
