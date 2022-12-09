@@ -21,6 +21,10 @@ function parseMessage (ws, message) {
         logger.info('Received "meta" request.')
         handleMetaRequest(ws);
         break;
+      case 'eval':
+        logger.info('Received "eval" request.')
+        handleEvalRequest(ws, data);
+        break;
     }
   }
 }
@@ -37,12 +41,26 @@ function handleDataRequest (ws) {
   logger.info('Sent "data" response');
 }
 
+function handleEvalRequest(ws, request) {
+  const response = {
+    "type": "eval",
+    "version": 1,
+    "payload": {
+      "id": request.payload.id,
+      "result": "{}"
+    }
+  }
+  ws.send(JSON.stringify(response));
+  logger.info('Sent "eval" response.')
+}
+
 function handleMetaRequest (ws) {
   const response = {
     type: 'meta',
     version: 1,
     payload: {
       name: "Alloy [mock]",
+      // The evaluator is present, but still must be enabled on a per-datum basis
       evaluator: true,
       views: ['graph', 'table', 'script']
     }

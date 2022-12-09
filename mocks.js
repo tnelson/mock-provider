@@ -29,7 +29,20 @@ const index = [
     {
         id: '3',
         format: 'alloy',
+        evaluator: true,
         data: fs.readFileSync('./data/tic_tac_toe/ttt_game.xml', 'utf-8')
+    },
+    {
+        id: '4',
+        format: 'alloy',
+        evaluator: true,
+        data: fs.readFileSync('./data/schedule/schedule1.xml', 'utf-8')
+    },
+    {
+        id: '5',
+        format: 'alloy',
+        evaluator: true,
+        data: fs.readFileSync('./data/schedule/schedule2.xml', 'utf-8')
     },
 ]
 export default index; 
