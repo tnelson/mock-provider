@@ -44,6 +44,18 @@ const index = [
         evaluator: true,
         data: fs.readFileSync('./data/schedule/schedule2.xml', 'utf-8')
     },
+    {
+        id: '6',
+        format: 'alloy',
+        evaluator: true,
+        data: fs.readFileSync('./data/subduction/subductionTest2_1.xml', 'utf-8')
+    },
+    {
+        id: '7',
+        format: 'alloy',
+        evaluator: true,
+        data: fs.readFileSync('./data/subduction/subductionTest2_2.xml', 'utf-8')
+    },
 ]
 export default index; 
 
