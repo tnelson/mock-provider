@@ -1,0 +1,145 @@
+<alloy builddate="Tuesday, January 3rd, 2023">
+<instance bitwidth="4" maxseq="-1" command="temporary-name1" filename="/no-name.rkt" version="1.7.0"  >
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<field label="no-field-guard" ID="3" parentID="2">
+<types> <type ID="2"/><type ID="2"/> </types>
+</field>
+
+<sig label="UOP" ID="4" parentID="2">
+
+</sig>
+
+<sig label="Eventually" ID="5" parentID="4">
+<atom label="Eventually0"/>
+</sig>
+
+<sig label="Not" ID="6" parentID="4">
+<atom label="Not0"/>
+</sig>
+
+<sig label="BOP" ID="7" parentID="2">
+
+</sig>
+
+<sig label="Or" ID="8" parentID="7">
+<atom label="Or0"/>
+</sig>
+
+<sig label="Formula" ID="9" parentID="2">
+
+</sig>
+
+<sig label="Unary" ID="10" parentID="9">
+<atom label="Formula0"/><atom label="Formula1"/><atom label="Formula2"/>
+</sig>
+
+<sig label="Always" ID="11" parentID="4">
+<atom label="Always0"/>
+</sig>
+
+<sig label="Until" ID="12" parentID="7">
+<atom label="Until0"/>
+</sig>
+
+<sig label="Trace" ID="13" parentID="2">
+<atom label="Trace2"/><atom label="Trace3"/>
+</sig>
+
+<sig label="Semantics" ID="14" parentID="2">
+<atom label="Semantics0"/>
+</sig>
+
+<sig label="Binary" ID="15" parentID="9">
+<atom label="Formula3"/>
+</sig>
+
+<sig label="State" ID="16" parentID="2">
+<atom label="State3"/>
+</sig>
+
+<sig label="Next" ID="17" parentID="4">
+<atom label="Next0"/>
+</sig>
+
+<sig label="Atom" ID="18" parentID="9">
+<atom label="Formula4"/>
+</sig>
+
+<sig label="And" ID="19" parentID="7">
+<atom label="And0"/>
+</sig>
+
+<field label="left" ID="20" parentID="15">
+<tuple><atom label="Formula3"/><atom label="Formula4"/></tuple>
+<types><type ID="15"/><type ID="9"/></types>
+
+</field>
+
+<field label="uop" ID="21" parentID="10">
+<tuple><atom label="Formula0"/><atom label="Always0"/></tuple>
+<tuple><atom label="Formula1"/><atom label="Always0"/></tuple>
+<tuple><atom label="Formula2"/><atom label="Always0"/></tuple>
+<types><type ID="10"/><type ID="4"/></types>
+
+</field>
+
+<field label="sub" ID="22" parentID="10">
+<tuple><atom label="Formula0"/><atom label="Formula3"/></tuple>
+<tuple><atom label="Formula1"/><atom label="Formula4"/></tuple>
+<tuple><atom label="Formula2"/><atom label="Formula3"/></tuple>
+<types><type ID="10"/><type ID="9"/></types>
+
+</field>
+
+<field label="table" ID="23" parentID="14">
+<tuple><atom label="Semantics0"/><atom label="Trace2"/><atom label="State3"/><atom label="Formula0"/></tuple>
+<tuple><atom label="Semantics0"/><atom label="Trace2"/><atom label="State3"/><atom label="Formula1"/></tuple>
+<tuple><atom label="Semantics0"/><atom label="Trace2"/><atom label="State3"/><atom label="Formula2"/></tuple>
+<tuple><atom label="Semantics0"/><atom label="Trace2"/><atom label="State3"/><atom label="Formula3"/></tuple>
+<tuple><atom label="Semantics0"/><atom label="Trace3"/><atom label="State3"/><atom label="Formula0"/></tuple>
+<tuple><atom label="Semantics0"/><atom label="Trace3"/><atom label="State3"/><atom label="Formula1"/></tuple>
+<tuple><atom label="Semantics0"/><atom label="Trace3"/><atom label="State3"/><atom label="Formula2"/></tuple>
+<tuple><atom label="Semantics0"/><atom label="Trace3"/><atom label="State3"/><atom label="Formula3"/></tuple>
+<types><type ID="14"/><type ID="13"/><type ID="16"/><type ID="9"/></types>
+
+</field>
+
+<field label="bop" ID="24" parentID="15">
+<tuple><atom label="Formula3"/><atom label="Until0"/></tuple>
+<types><type ID="15"/><type ID="7"/></types>
+
+</field>
+
+<field label="truths" ID="25" parentID="16">
+<tuple><atom label="State3"/><atom label="Formula4"/></tuple>
+<types><type ID="16"/><type ID="18"/></types>
+
+</field>
+
+<field label="next" ID="26" parentID="13">
+<tuple><atom label="Trace2"/><atom label="State3"/><atom label="State3"/></tuple>
+<tuple><atom label="Trace3"/><atom label="State3"/><atom label="State3"/></tuple>
+<types><type ID="13"/><type ID="16"/><type ID="16"/></types>
+
+</field>
+
+<field label="right" ID="27" parentID="15">
+<tuple><atom label="Formula3"/><atom label="Formula4"/></tuple>
+<types><type ID="15"/><type ID="9"/></types>
+
+</field>
+
+
+</instance>
+
+<source filename="/no-name.rkt" content="// Couldn't open source file (/no-name.rkt) (info: (2 . posix)). Is the file saved?"></source>
+</alloy>
