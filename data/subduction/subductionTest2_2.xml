@@ -1,6 +1,6 @@
 <alloy builddate="2015-02-22 18:21 EST">
 
-<instance bitwidth="0" maxseq="0" command="Run SubductionTest2 for 1 but 2 NetworkName, 2 NetworkState, 1 Layering, 0 Bridge, 1 Subduction, 6 Name, 2 LinkIdent, 6 Link, 5 SessionIdent, 10 Header, 6 AcquireTable, 6 ForwardTable, 4 ExternalReference" filename="C:\Users\Tim\repos\research\temp\net3.als">
+<instance bitwidth="1" maxseq="0" command="Run SubductionTest2 for 1 but 2 NetworkName, 2 NetworkState, 1 Layering, 0 Bridge, 1 Subduction, 6 Name, 2 LinkIdent, 6 Link, 5 SessionIdent, 10 Header, 6 AcquireTable, 6 ForwardTable, 4 ExternalReference" filename="C:\Users\Tim\repos\research\temp\net3.als">
 
 <sig label="seq/Int" ID="0" parentID="1" builtin="yes">
 </sig>

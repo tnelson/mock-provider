@@ -1,6 +1,9 @@
+<!-- TN modified Mar 10 2023 to enable parallel development: 
+  * bitwidth was 0
+  * Sterling doesn't currently handle multiple "types" elements in a field -->
 <alloy builddate="2015-02-22 18:21 EST">
 
-<instance bitwidth="0" maxseq="0" command="Run SubductionTest2 for 1 but 2 NetworkName, 2 NetworkState, 1 Layering, 0 Bridge, 1 Subduction, 6 Name, 2 LinkIdent, 6 Link, 5 SessionIdent, 10 Header, 6 AcquireTable, 6 ForwardTable, 4 ExternalReference" filename="C:\Users\Tim\repos\research\temp\net3.als">
+<instance bitwidth="1" maxseq="0" command="Run SubductionTest2 for 1 but 2 NetworkName, 2 NetworkState, 1 Layering, 0 Bridge, 1 Subduction, 6 Name, 2 LinkIdent, 6 Link, 5 SessionIdent, 10 Header, 6 AcquireTable, 6 ForwardTable, 4 ExternalReference" filename="C:\Users\Tim\repos\research\temp\net3.als">
 
 <sig label="seq/Int" ID="0" parentID="1" builtin="yes">
 </sig>
@@ -370,49 +373,49 @@
 <field label="arows" ID="67" parentID="66">
    <tuple> <atom label="AcquireTable$2"/> <atom label="LinkIdent$0"/> <atom label="H04$0"/> <atom label="Forward$0"/> </tuple>
    <tuple> <atom label="AcquireTable$2"/> <atom label="LinkIdent$1"/> <atom label="H40$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$0"/> <atom label="H32$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$0"/> <atom label="H32$0"/> <atom label="Receive$0"/> </tuple>
    <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$0"/> <atom label="H42$0"/> <atom label="Receive$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$0"/> <atom label="H04$0"/> <atom label="Receive$0"/> </tuple>
+   <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$0"/> <atom label="H04$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$0"/> <atom label="H04$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$0"/> <atom label="H40$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$0"/> <atom label="H40$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$0"/> <atom label="H40$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$1"/> <atom label="H04$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$1"/> <atom label="H04$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$1"/> <atom label="H04$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$1"/> <atom label="H40$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$1"/> <atom label="H40$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$3"/> <atom label="LinkIdent$1"/> <atom label="H40$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H12$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H12$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H12$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H21$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H21$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H21$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H23$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H23$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H23$0"/> <atom label="Forward$0"/> </tuple>
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H32$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H05$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H05$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H05$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H50$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H50$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H50$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H24$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H24$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H24$0"/> <atom label="Forward$0"/> </tuple>
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$0"/> <atom label="H42$0"/> <atom label="Forward$0"/> </tuple>
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H12$0"/> <atom label="Forward$0"/> </tuple>
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H21$0"/> <atom label="Forward$0"/> </tuple>
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H23$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H32$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H32$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H32$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H05$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H05$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H05$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H50$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H50$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H50$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H42$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H42$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$4"/> <atom label="LinkIdent$1"/> <atom label="H42$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H12$0"/> <atom label="Receive$0"/> </tuple>
+   <!-- <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H12$0"/> <atom label="Receive$0"/> </tuple>
    <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H21$0"/> <atom label="Receive$0"/> </tuple>
    <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H23$0"/> <atom label="Receive$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H24$0"/> <atom label="Receive$0"/> </tuple>
+   <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H24$0"/> <atom label="Receive$0"/> </tuple> -->
    <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H24$0"/> <atom label="Forward$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H04$0"/> <atom label="Receive$0"/> </tuple>
-   <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H40$0"/> <atom label="Receive$0"/> </tuple>
-   <types> <type ID="66"/> <type ID="7"/> <type ID="26"/> <type ID="15"/> </types>
+   <!-- <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H04$0"/> <atom label="Receive$0"/> </tuple>
+   <tuple> <atom label="AcquireTable$5"/> <atom label="LinkIdent$1"/> <atom label="H40$0"/> <atom label="Receive$0"/> </tuple> -->
+   <!-- <types> <type ID="66"/> <type ID="7"/> <type ID="26"/> <type ID="15"/> </types> -->
    <types> <type ID="66"/> <type ID="7"/> <type ID="26"/> <type ID="16"/> </types>
 </field>
 
@@ -426,7 +429,7 @@
 </sig>
 
 <field label="frows" ID="69" parentID="68">
-   <tuple> <atom label="ForwardTable$0"/> <atom label="LinkIdent$0"/> <atom label="H21$0"/> <atom label="LinkIdent$0"/> </tuple>
+   <!-- <tuple> <atom label="ForwardTable$0"/> <atom label="LinkIdent$0"/> <atom label="H21$0"/> <atom label="LinkIdent$0"/> </tuple>
    <tuple> <atom label="ForwardTable$0"/> <atom label="LinkIdent$0"/> <atom label="H23$0"/> <atom label="LinkIdent$0"/> </tuple>
    <tuple> <atom label="ForwardTable$0"/> <atom label="LinkIdent$0"/> <atom label="H32$0"/> <atom label="LinkIdent$0"/> </tuple>
    <tuple> <atom label="ForwardTable$0"/> <atom label="LinkIdent$0"/> <atom label="H05$0"/> <atom label="Drop$0"/> </tuple>
@@ -583,7 +586,7 @@
    <tuple> <atom label="ForwardTable$5"/> <atom label="Self$0"/> <atom label="H40$0"/> <atom label="LinkIdent$1"/> </tuple>
    <types> <type ID="68"/> <type ID="7"/> <type ID="26"/> <type ID="7"/> </types>
    <types> <type ID="68"/> <type ID="7"/> <type ID="26"/> <type ID="19"/> </types>
-   <types> <type ID="68"/> <type ID="17"/> <type ID="26"/> <type ID="7"/> </types>
+   <types> <type ID="68"/> <type ID="17"/> <type ID="26"/> <type ID="7"/> </types> -->
    <types> <type ID="68"/> <type ID="17"/> <type ID="26"/> <type ID="19"/> </types>
 </field>
 
@@ -745,7 +748,7 @@
 </field>
 
 <field label="receiveTable" ID="87" parentID="70">
-   <tuple> <atom label="NetworkState$0"/> <atom label="M0$0"/> <atom label="H40$0"/> <atom label="Primitive$0"/> </tuple>
+   <!-- <tuple> <atom label="NetworkState$0"/> <atom label="M0$0"/> <atom label="H40$0"/> <atom label="Primitive$0"/> </tuple>
    <tuple> <atom label="NetworkState$0"/> <atom label="M1$0"/> <atom label="H21$0"/> <atom label="ExternalLink$1"/> </tuple>
    <tuple> <atom label="NetworkState$0"/> <atom label="M1$0"/> <atom label="H04$0"/> <atom label="ExternalLink$0"/> </tuple>
    <tuple> <atom label="NetworkState$0"/> <atom label="M1$0"/> <atom label="H40$0"/> <atom label="ExternalLink$0"/> </tuple>
@@ -756,7 +759,7 @@
    <tuple> <atom label="NetworkState$0"/> <atom label="M3$0"/> <atom label="H40$0"/> <atom label="ExternalLink$0"/> </tuple>
    <tuple> <atom label="NetworkState$0"/> <atom label="M4$0"/> <atom label="H24$0"/> <atom label="Primitive$0"/> </tuple>
    <tuple> <atom label="NetworkState$0"/> <atom label="M4$0"/> <atom label="H04$0"/> <atom label="Primitive$0"/> </tuple>
-   <types> <type ID="70"/> <type ID="9"/> <type ID="26"/> <type ID="18"/> </types>
+   <types> <type ID="70"/> <type ID="9"/> <type ID="26"/> <type ID="18"/> </types> -->
    <types> <type ID="70"/> <type ID="9"/> <type ID="26"/> <type ID="60"/> </types>
 </field>
 
@@ -823,7 +826,7 @@
 </field>
 
 <field label="transmitTable" ID="95" parentID="70">
-   <tuple> <atom label="NetworkState$0"/> <atom label="M0$0"/> <atom label="LinkIdent$1"/> <atom label="Primitive$0"/> </tuple>
+   <!-- <tuple> <atom label="NetworkState$0"/> <atom label="M0$0"/> <atom label="LinkIdent$1"/> <atom label="Primitive$0"/> </tuple>
    <tuple> <atom label="NetworkState$0"/> <atom label="M1$0"/> <atom label="LinkIdent$0"/> <atom label="Primitive$0"/> </tuple>
    <tuple> <atom label="NetworkState$0"/> <atom label="M1$0"/> <atom label="LinkIdent$1"/> <atom label="Primitive$0"/> </tuple>
    <tuple> <atom label="NetworkState$0"/> <atom label="M2$0"/> <atom label="LinkIdent$0"/> <atom label="Primitive$0"/> </tuple>
@@ -837,7 +840,7 @@
    <tuple> <atom label="NetworkState$1"/> <atom label="M3$0"/> <atom label="LinkIdent$1"/> <atom label="Primitive$0"/> </tuple>
    <tuple> <atom label="NetworkState$1"/> <atom label="M5$0"/> <atom label="LinkIdent$0"/> <atom label="ExternalSession$1"/> </tuple>
    <tuple> <atom label="NetworkState$1"/> <atom label="M5$0"/> <atom label="LinkIdent$1"/> <atom label="ExternalSession$0"/> </tuple>
-   <types> <type ID="70"/> <type ID="9"/> <type ID="7"/> <type ID="18"/> </types>
+   <types> <type ID="70"/> <type ID="9"/> <type ID="7"/> <type ID="18"/> </types> -->
    <types> <type ID="70"/> <type ID="9"/> <type ID="7"/> <type ID="63"/> </types>
 </field>
 
