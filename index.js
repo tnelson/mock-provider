@@ -12,18 +12,19 @@ function parseMessage (ws, message) {
     ws.send('pong');
   } else {
     const data = JSON.parse(message);
+    logger.info(`Received ${data.type} message from Sterling. request: ${JSON.stringify(data)}.`);
     switch(data.type) {
       case 'data':
-        logger.info('Received "data" request.');
         handleDataRequest(ws);
         break;
       case 'meta':
-        logger.info('Received "meta" request.')
         handleMetaRequest(ws);
         break;
       case 'eval':
-        logger.info('Received "eval" request.')
         handleEvalRequest(ws, data);
+        break;
+      case 'click':
+        handleClickRequest(ws);
         break;
     }
   }
@@ -38,8 +39,21 @@ function handleDataRequest (ws) {
     }
   };
   ws.send(JSON.stringify(response));
-  logger.info('Sent "data" response');
+  logger.info('Sent initial "data" response');
 }
+
+function handleClickRequest (ws) {
+  const response = {
+    type: 'data',
+    version: 1,
+    payload: {
+      enter: []
+    }
+  };
+  ws.send(JSON.stringify(response));
+  logger.info('Sent "click" response');
+}
+
 
 function handleEvalRequest(ws, request) {
   const response = {
@@ -62,7 +76,9 @@ function handleMetaRequest (ws) {
       name: "Alloy [mock]",
       // The evaluator is present, but still must be enabled on a per-datum basis
       evaluator: true,
-      views: ['graph', 'table', 'script']
+      views: ['graph', 'table', 'script'],
+      // Two additional data elements have an empty generator name, to check robustness. 
+      generators: ['traces', 'ttt_game', 'schedule', 'subduction', 'LTLf']
     }
   }
   ws.send(JSON.stringify(response));

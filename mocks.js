@@ -12,6 +12,7 @@ import assert from 'node:assert/strict';
 */
 const index = [
     {
+        generatorName: 'traces',
         id: '0',
         format: 'alloy',
         data: fs.readFileSync('./data/trace0.xml', 'utf-8')
@@ -27,36 +28,42 @@ const index = [
         data: fs.readFileSync('./data/trace2.xml', 'utf-8')
     },
     {
+        generatorName: 'ttt_game',
         id: '3',
         format: 'alloy',
         evaluator: true,
         data: fs.readFileSync('./data/tic_tac_toe/ttt_game.xml', 'utf-8')
     },
     {
+        generatorName: 'schedule',
         id: '4',
         format: 'alloy',
         evaluator: true,
         data: fs.readFileSync('./data/schedule/schedule1.xml', 'utf-8')
     },
     {
+        generatorName: 'schedule',
         id: '5',
         format: 'alloy',
         evaluator: true,
         data: fs.readFileSync('./data/schedule/schedule2.xml', 'utf-8')
     },
     {
+        generatorName: 'subduction',
         id: '6',
         format: 'alloy',
         evaluator: true,
         data: fs.readFileSync('./data/subduction/subductionTest2_1.xml', 'utf-8')
     },
     {
+        generatorName: 'subduction',
         id: '7',
         format: 'alloy',
         evaluator: true,
         data: fs.readFileSync('./data/subduction/subductionTest2_2.xml', 'utf-8')
     },
     {
+        generatorName: 'LTLf',
         id: '8',
         format: 'alloy',
         evaluator: false,
